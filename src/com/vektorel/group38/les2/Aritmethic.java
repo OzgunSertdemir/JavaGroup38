@@ -35,4 +35,6 @@ public class Aritmethic {
         System.out.println("Bolum : " + bolum);
     }
 
+    // Scanner
+
 }
