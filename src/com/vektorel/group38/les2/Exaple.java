@@ -6,7 +6,8 @@ import java.util.Scanner;
 public class Exaple {
 
     public static void main(String[] args) {
-        aritmetik2();
+        Exaple exaple=new Exaple();
+        exaple.aritmetik2();
     }
 
     /**
@@ -34,7 +35,7 @@ public class Exaple {
     /**
      * Bu method kesirli işlem yapar
      */
-    public static void aritmetik2() {
+    public void aritmetik2() {
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("Bir değer giriniz");

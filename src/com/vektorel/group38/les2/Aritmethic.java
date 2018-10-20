@@ -6,8 +6,8 @@ Ctrl+Alt+L  Kodu formatlamak için
 
  */
 public class Aritmethic {
-
-
+    
+    public static  String ad="Taner";
     public void toplama(int sayi1, int sayi2) {
         // 5 + 7 = 12
 
@@ -25,7 +25,6 @@ public class Aritmethic {
 
     public void carpma(int sayi1, int sayi2) {
         int carpim = sayi1 * sayi2;
-
         System.out.println("Çarpım : " + carpim);
     }
 

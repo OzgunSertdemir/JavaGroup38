@@ -37,7 +37,7 @@ public class SimpleIfElse {
 
         System.out.println("Adınız : " + isim + "\nSoyadınız : " + soyisim);
 
-        if (yas > 0 && yas < 6 ) {
+        if (yas > 0 && yas < 6) {
             System.out.println("Çocuk");
         } else if (yas >= 6 && yas < 18) {
             System.out.println("Genç");
@@ -48,8 +48,9 @@ public class SimpleIfElse {
         } else {
             System.out.println("Bir Yanlışlık var gibi");
         }
-
+                
         System.out.println("Yaşınız : " + yas);
+
 
     }
 }
