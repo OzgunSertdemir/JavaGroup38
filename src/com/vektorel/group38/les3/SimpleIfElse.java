@@ -48,7 +48,7 @@ public class SimpleIfElse {
         } else {
             System.out.println("Bir Yanlışlık var gibi");
         }
-                
+
         System.out.println("Yaşınız : " + yas);
 
 
