@@ -67,4 +67,6 @@ public class Lesson5 {
             deger++;
         }while (deger<10);
     }
+
+    
 }

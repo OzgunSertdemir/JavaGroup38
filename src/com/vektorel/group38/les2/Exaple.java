@@ -13,7 +13,7 @@ public class Exaple {
     /**
      * Bu method tamsayı işlem yapar
      */
-    public static void aritmetik() {
+    public void aritmetik() {
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("Bir değer giriniz");
