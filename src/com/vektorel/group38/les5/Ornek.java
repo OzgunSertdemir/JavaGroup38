@@ -1,6 +1,7 @@
 package com.vektorel.group38.les5;
 
 import com.vektorel.group38.les2.Exaple;
+import com.vektorel.group38.les4.GeometricCalc;
 import com.vektorel.group38.les4.Lesson4;
 
 import java.util.Scanner;
@@ -11,7 +12,7 @@ public class Ornek {
 
     public static void main(String[] args) {
         System.out.println("Hoşgeldiniz");
-        Ornek ornek =new Ornek();
+        Ornek ornek = new Ornek();
         ornek.login();
     }
 
@@ -41,7 +42,7 @@ public class Ornek {
     private void adminMenu() {
         while (true) {
             System.out.println("-----------------MENÜ----------------------");
-            System.out.println("Aritmetik için 1 \nKarekok için 2 \nÇıkış için 3 giriniz");
+            System.out.println("Geometrik için 0 \nAritmetik için 1 \nKarekok için 2 \nÇıkış için 3 giriniz");
             int islemTipi = scanner.nextInt();
             islemlerMenusu(islemTipi);
             System.out.println("---------------------------------------");
@@ -51,7 +52,7 @@ public class Ornek {
     private void userMenu() {
         while (true) {
             System.out.println("-----------------MENÜ----------------------");
-            System.out.println("Aritmetik için 1 \nÇıkış için 3 giriniz");
+            System.out.println("Geometrik için 0 \nAritmetik için 1 \nÇıkış için 3 giriniz");
             int islemTipi = scanner.nextInt();
             islemlerMenusu(islemTipi);
             System.out.println("---------------------------------------");
@@ -61,8 +62,12 @@ public class Ornek {
     public void islemlerMenusu(int islemTipi) {
         Exaple exaple = new Exaple();
         Lesson4 lesson4 = new Lesson4();
+        GeometricCalc geometricCalc=new GeometricCalc();
 
         switch (islemTipi) {
+            case 0:
+                geometricCalc.islemler();
+                break;
             case 1:
                 exaple.aritmetik();
                 break;
