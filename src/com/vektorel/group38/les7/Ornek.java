@@ -1,5 +1,7 @@
 package com.vektorel.group38.les7;
 
+import com.vektorel.group38.les9.Kisi;
+
 import java.util.Random;
 import java.util.Scanner;
 
@@ -68,6 +70,7 @@ public class Ornek {
     }
 
     public void turkce() {
+
     }
 
 
