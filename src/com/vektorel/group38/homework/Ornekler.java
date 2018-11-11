@@ -83,6 +83,28 @@ public class Ornekler {
      *      a- Kullanıcı Adı : ab Şifre :ab olan kullanıcı sadece ilk 10 maddeyi kullanabilsin,
      *      b- Kullanıcı Adı : bc Şifre :bc olan kullanıcı sadece tek sayı olan maddeleri kullanabilsin
      *      c-Kullanıcı Adı : admin Şifre :admin olan kullanıcı tüm maddeleri kullanabilsin
+     *
+     *
+     * Girilen değeri tersine çeviren metodu yazınız (örnek 12345 girildiğinde 54321 yazack)
+     *
+     *
+     *
+     * Girilen bir stringi tersten yazan methodu yazınız
+     *
+     *
+     * Girilen bir sayının basit çarpanlarını ekrana yazan method (90 -> 2,3,5)
+     *
+     *
+     * Girilen bir metni TR -> EN ingilizceye çeviren methodu yazınız (çok güzel -> cok guzel)
+     *
+     *
+     * Girilen sayının kendisinden küçük en büyük bölenini bulan method
+     *
+     *
+     * Girilen bir string içerisindeki en çok kullanılan harfi bulan method
+     *
+     *
+     *
      */
 
 
