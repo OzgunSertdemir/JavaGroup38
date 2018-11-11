@@ -9,9 +9,9 @@ import java.util.Scanner;
 
 public class Ornek {
 
+
     List<Rehber> rehberList = new ArrayList<>();
-    Scanner scanner = new Scanner(System.in);
-    String sifreDosyasi = "C:\\taner\\rehber\\sifre.txt";
+    String sifreDosyasi = "C:" + File.separator + "taner\\rehber\\sifre.txt";
     String rehberDosyasi = "C:\\taner\\rehber\\rehber.txt";
 
     /**
@@ -33,6 +33,7 @@ public class Ornek {
 
 
     public void loginKontrol() {
+        Scanner scanner = new Scanner(System.in);
         System.out.println("Hoşgeldiniz.");
         System.out.println("Kullanıcı Adınızı Giriniz :");
         String username = scanner.nextLine();
@@ -49,12 +50,14 @@ public class Ornek {
         } else {
             System.out.println("Kullanıcı Adı vea Şifre Hatalı");
         }
-
+        scanner.close();
     }
 
     public void menu() {
+
         kisileriYukle();
         while (true) {
+            Scanner scanner = new Scanner(System.in);
             System.out.println("Kişileri ;");
             System.out.println("            Listelemek için 1");
             System.out.println("            Silmek için 2");
@@ -81,6 +84,7 @@ public class Ornek {
                     System.exit(0);
                     break;
             }
+            scanner.close();
         }
     }
 
@@ -101,9 +105,10 @@ public class Ornek {
         System.out.println("-----------Rehber Kişi Sil---------------");
         System.out.println(" Silmek istediğiniz kişinin telefonunu giriniz ");
         String tel = sc.nextLine();
-        Rehber r = rehberList.stream().filter(t->t.getTelefon().equals(tel)).findFirst().get();
+        Rehber r = rehberList.stream().filter(t -> t.getTelefon().equals(tel)).findFirst().get();
         rehberList.remove(r);
         System.out.println("------------------------------------------");
+        sc.close();
     }
 
     private void arama() {
@@ -123,16 +128,16 @@ public class Ornek {
         System.out.println("Adres Giriniz ");
         String adres = sc.nextLine();
 
-        Rehber r=new Rehber();
+        Rehber r = new Rehber();
         r.setAd(adi);
         r.setTelefon(tel);
         r.setAdres(adres);
         r.setEmail(email);
         r.setSoyad(soyad);
         rehberList.add(r);
-
+        sc.close();
         System.out.println("------------------------------------------");
-}
+    }
 
     private void kisilerinSonHaliniKaydet() {
         StringBuilder stringBuilder = new StringBuilder();
@@ -173,6 +178,7 @@ public class Ornek {
             while (scanner.hasNextLine()) {
                 stringBuilder.append(scanner.nextLine());
             }
+            scanner.close();
         } catch (Exception e) {
             e.printStackTrace();
         }
